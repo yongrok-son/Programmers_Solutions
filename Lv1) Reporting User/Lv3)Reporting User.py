@@ -8,7 +8,7 @@ def solution(id_list, report, k):
 
 
     for i in report_set:
-        report_contents.append(i.split())
+        report_contents.append(i.split())        
     for i in id_list:
         temp_count = 0
         temp_id = []
@@ -24,8 +24,7 @@ def solution(id_list, report, k):
     for j in user_report_id:
 
         count = 0
-        for m in j:
-            
+        for m in j:            
             if report_count[id_list.index(m)]>= k:                
                 count += 1
         answer.append(count)
