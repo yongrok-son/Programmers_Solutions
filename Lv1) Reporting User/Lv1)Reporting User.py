@@ -34,7 +34,7 @@ def solution(id_list, report, k):
             print("else : ", i)
             user_report_id.append(temp_user_report_id)
             print("report id : " , user_report_id)
-            temp_user_report_id = []
+            temp_user_report_id = []  # .clear() , = [] 차이 ??
             print(temp_user_report_id)
             temp_user_report_id.append(i[1])
             print(temp_user_report_id)
