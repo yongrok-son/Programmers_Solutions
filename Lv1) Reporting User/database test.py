@@ -8,15 +8,16 @@ def solution(id_list, report, k):
 
 
     for i in report_set:
-        report_contents.append(i.split())        
+        report_contents.append(i.split())   
+
     for i in id_list:
         temp_count = 0
         temp_id = []
         for j in report_contents:
-            if j[1] == i:
-                temp_count += 1
             if j[0] == i:
                 temp_id.append(j[1])
+            elif j[1] == i:
+                temp_count += 1
         user_report_id.append(temp_id)
         report_count.append(temp_count)   
 
@@ -29,9 +30,6 @@ def solution(id_list, report, k):
                 count += 1
         answer.append(count)
         
-
-     
-
     return answer
 
 id_list = ["muzi", "frodo", "apeach", "neo"]
